@@ -4,7 +4,7 @@ import Form from './Form';
 import TodoList from './TodoList';
 
 const Todo = () => {
-  const [todo, setTodo] = useState('');
+  const [todo, setTodo] = useState({ name: '', done: false });
   const [todos, setTodos] = useState([]);
 
   return (

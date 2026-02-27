@@ -2,7 +2,7 @@ const Form = ({ setTodos, setTodo, todos, todo }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setTodos([...todos, todo]);
-    setTodo('');
+    setTodo({ name: '', done: false });
   };
   return (
     <form
@@ -12,9 +12,9 @@ const Form = ({ setTodos, setTodo, todos, todo }) => {
       <div className="flex">
         <input
           className="border flex-1 p-3 border-amber-600 border-r-0 rounded-md rounded-r-none outline-none"
-          onChange={(e) => setTodo(e.target.value)}
+          onChange={(e) => setTodo({ name: e.target.value })}
           type="text"
-          value={todo}
+          value={todo.name}
         />
         <button
           type="submit"
