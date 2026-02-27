@@ -1,6 +1,6 @@
 const TodoItem = ({ item, todos, setTodos }) => {
   const handleDelete = (i) => {
-    setTodos(todos.filter((el) => el !== i));
+    setTodos(todos.filter((el) => el.name !== i));
   };
   const handleClick = (item) => {
     setTodos(

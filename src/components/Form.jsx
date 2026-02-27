@@ -7,7 +7,7 @@ const Form = ({ setTodos, setTodo, todos, todo }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="p-10 text-center shadow-2xl w-1/2 mx-auto mt-6"
+      className="p-10 text-center shadow-2xl w-1/2 mx-auto my-6 "
     >
       <div className="flex">
         <input
