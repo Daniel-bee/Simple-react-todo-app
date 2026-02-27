@@ -10,7 +10,7 @@ const Todo = () => {
   return (
     <>
       <Form todo={todo} setTodos={setTodos} todos={todos} setTodo={setTodo} />
-      <TodoList todos={todos} />
+      <TodoList todos={todos} setTodos={setTodos} />
     </>
   );
 };
